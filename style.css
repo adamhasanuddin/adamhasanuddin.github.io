@@ -1,0 +1,172 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
+    line-height: 1.7;
+}
+
+header {
+    background: white;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.navbar {
+    max-width: 1050px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    color: #0f172a;
+    font-size: 19px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: #475569;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+.hero {
+    max-width: 1050px;
+    margin: auto;
+    padding: 110px 20px;
+}
+
+.eyebrow {
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: clamp(36px, 6vw, 58px);
+    margin: 15px 0;
+    color: #0f172a;
+    line-height: 1.15;
+}
+
+.hero h2 {
+    font-size: 22px;
+    color: #475569;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 650px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 22px;
+    background: #2563eb;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: #1d4ed8;
+}
+
+.section {
+    max-width: 1050px;
+    margin: auto;
+    padding: 65px 20px;
+    border-top: 1px solid #e2e8f0;
+}
+
+.section h2 {
+    color: #0f172a;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skills span, .tag {
+    background: #dbeafe;
+    color: #1e40af;
+    padding: 7px 13px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.project {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 9px;
+    padding: 22px;
+    margin-bottom: 16px;
+}
+
+.project h3 {
+    margin-bottom: 8px;
+    color: #0f172a;
+}
+
+.tag {
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.section a {
+    color: #2563eb;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #0f172a;
+    color: white;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .hero {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+}
